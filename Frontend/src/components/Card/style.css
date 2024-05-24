@@ -1,0 +1,27 @@
+.cards-SN{
+    background-color: rgb(18, 18, 54);
+    height: 520px;
+    width: 24%;
+    clip-path: polygon(6% 0, 94% 0, 100% 6%, 100% 94%, 95% 100%, 5% 100%, 0 94%, 0 6%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.cards-content-SN{
+    height: 510px;
+    width: 97%;
+    margin-top: 3px;
+    clip-path: polygon(6.5% 0.5%, 93.5% 0.5%, 99.5% 6.5%, 99.5% 93.5%, 0.5% 93.5%, 0.5% 6.5%);
+}
+
+@media screen and (max-width: 768px) {
+    .cards-SN{
+        width: 50%;
+        margin-right: 100px;
+    }
+}
+
+

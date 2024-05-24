@@ -1,0 +1,75 @@
+
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: rgb(18, 18, 54);
+    padding: 40px 0 40px 1%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    box-shadow:3px 0 0 rgb(255, 238, 1);
+    z-index: 9999;
+    position: fixed;
+    margin-top: 10vh;
+    left: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+nav.menu-lateral:hover{
+    width: 275px;
+    
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+
+}
+
+.btn-expandir svg {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .5s;
+}
+
+ul li.item-menu:hover{
+    background-color: rgb(255, 239, 19);
+    
+    
+    
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 45px;
+    white-space: nowrap;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
+
+}
+
+ul li.item-menu a .icon svg {
+    font-size: 30px;
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+ul li.item-menu a:hover{
+    color: black;
+}

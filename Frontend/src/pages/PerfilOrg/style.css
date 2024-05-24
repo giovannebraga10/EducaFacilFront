@@ -1,0 +1,219 @@
+.all-page-perfil{
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.perfil-organizacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    gap: 50px;
+}
+
+.perfil-head{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;    
+}
+
+.logo-perfil-org img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid rgb(129, 126, 126);
+}
+
+.info-perfil-org{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.descricao-perfil-org{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    text-align:justify;
+    height: 40px;
+    width: 400px;
+    padding: 5px;
+    border: 3px solid rgb(241, 239, 239);
+    background-color: rgb(157, 159, 161);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.perfil-dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    
+}
+.perfil-separador{
+    height: 1.5px;
+    width: 105%;
+    background-color: rgb(71, 71, 80);
+}
+
+.button-edit{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2px;
+    width: 100%;
+    visibility: hidden;
+}
+
+.pencil-edit{
+    background: linear-gradient(120deg, #6a51b1 0%, rgb(18, 18, 54) 100% ) ;
+    padding: 15px;
+    color: white;
+    border-radius: 14px;
+    border: 3px solid rgb(241, 239, 239);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.perfil-content{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.curso-pub{
+    display: flex;
+    gap: 50px;
+    height: 90px;
+    border: 3px solid rgb(241, 239, 239);
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(157, 159, 161);
+}
+.curso-content-card{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.info-curso{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px;
+    
+}
+
+.sub-info-curso{
+    display: flex;
+    background-color: #b6b4b7;
+    border: 1px solid rgb(241, 239, 239);
+    justify-content: space-between;
+    color: #313132ef;
+    font-size: 10pt;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+}
+
+.titulo-curso{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 35%;
+}
+
+.professor-curso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carga-curso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-curso{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-add-curso{
+    background: linear-gradient(120deg, #6a51b1 0%, rgb(18, 18, 54) 100% ) ;
+    padding: 15px;
+    color: white;
+    border-radius: 14px;
+    border: 3px solid rgb(241, 239, 239);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.inputs-postar-curso{
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-excluir{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 1.1rem;
+    color: rgb(228, 46, 46);
+    border: 2px solid rgb(241, 239, 239) ;
+    border-radius: 5px;
+}
+
+.name-organizacao{
+    text-wrap: nowrap;
+}
+
+.inputs-info{
+    display: flex;
+    width: 100%;
+    font-size: 1.2rem;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs-info input{
+    width: calc(100% - 20px);
+    border-radius: 10px;;
+}
+
+.salvar-curso button{
+    background: linear-gradient(120deg, #6a51b1 0%, rgb(18, 18, 54) 100% ) ;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    border: 3px solid rgb(241, 239, 239);
+    font-size: 16px;
+    cursor: pointer;
+}

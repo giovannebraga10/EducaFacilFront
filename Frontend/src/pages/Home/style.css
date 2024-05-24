@@ -1,0 +1,334 @@
+.home-content-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-flex {
+    display: flex;
+}
+
+.home-content {
+    margin-top: 100px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0 150px 0 150px;
+    justify-content: center;
+    gap: 80px;
+}
+
+.home-content-welcome {
+    background-color: rgb(255, 239, 19);
+    width: 510px;
+    height: 500px;
+    clip-path: polygon(6% 0, 94% 0, 100% 6%, 100% 94%, 95% 100%, 5% 100%, 0 94%, 0 6%);
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.home-content-welcome-small {
+    height: 498px;
+    width: 504px;
+    margin-top: 2px;
+    background-color: rgb(18, 18, 54);
+    clip-path: polygon(6.5% 0.5%, 93.5% 0.5%, 99.5% 6.5%, 99.5% 93.5%, 0.5% 93.5%, 0.5% 6.5%);
+}
+
+.home-content-welcome-small-show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem .75rem 1rem;
+    gap: 1rem;
+}
+
+.home-content-welcome-small-show-msg {
+    font-family: cursive;
+    margin-top: 10px;
+    font-weight: 100;
+    max-width: 80%;
+    font-size: 1.02rem;
+    line-height: 1.3rem;
+    padding: 0 .875rem;
+    background-color: white;
+    border-radius: 0 1.25rem 1.25rem 0;
+}
+
+.home-content-welcome-small-show-schools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 8px;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.home-content-welcome-small-show-schools button {
+    font-family: sans-serif;
+    font-weight: 700;
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.home-content-welcome-small-show-schools button:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.home-content-welcome2 {
+    font-family: "Chakra Petch", sans-serif;
+    margin-top: 0;
+    font-size: 1.6rem;
+    line-height: 170%;
+    color: black;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 350px;
+
+
+}
+
+.home-content-welcome2-text {
+    color: black;
+    font-size: 1.4rem;
+    line-height: 130%;
+
+}
+
+.home-content-colaborador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 0 150px 0 180px;
+}
+
+.home-content-colaborador1 {
+    font-family: "Chakra Petch", sans-serif;
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 170%;
+    color: black;
+    padding: 0 20px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 630px;
+    height: 350px;
+
+
+}
+
+.home-content-colaborador1-text2 {
+    color: black;
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+.instituto-mold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 526px;
+    height: 326px;
+    background-color: rgb(255, 239, 19);
+}
+
+.home-content-cards {
+    margin-top: 150px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    padding: 0 225px 0 150px;
+    justify-content: center;
+    gap: 100px;
+    flex-direction: column;
+}
+
+.home-content-cards-container {
+    display: flex;
+    gap: 50px;
+}
+
+.home-content-cards-msg {
+    font-size: 1.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.home-content-card1 {
+    height: 480px;
+    width: 400px;
+    background-color: rgb(255, 239, 19);
+    clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+}
+
+.home-content-card2 {
+    height: 480px;
+    width: 400px;
+    background-color: rgb(255, 239, 19);
+    clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+}
+
+.home-content-card3 {
+    height: 480px;
+    width: 400px;
+    background-color: rgb(255, 239, 19);
+    clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 0);
+}
+
+.home-content-card-small {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0.5px;
+    height: 478px;
+    width: 398px;
+    clip-path: polygon(99% 1%, 99% 90%, 90% 99%, 1% 99%, 1% 1%);
+    background-color: rgb(18, 18, 54);
+
+}
+
+.home-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-card-head {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-top: 10%;
+    gap: 2px;
+    align-items: start;
+}
+
+.card-icon {
+    color: yellow;
+    font-size: 4rem;
+}
+
+.card-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+.home-card-content {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: white;
+    padding-bottom: 15%;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 50%;
+}
+
+@media screen and (max-width: 768px) {   
+    .content-flex {
+        overflow: hidden;
+        max-width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .home-content {
+        width: 70%;
+        flex-direction: column;
+        padding: 0;
+        gap: 40px;
+    }
+
+    .home-content-welcome,
+    .home-content-welcome-small,
+    .home-content-welcome2 {
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+    }
+
+    .home-content-colaborador,
+    .home-content-colaborador1  {
+        margin-top: 50px;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .home-content-colaborador1-text2 {
+        margin-bottom: 30px;
+    }
+
+    .home-content-cards-container,
+    .home-content-cards {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .home-content-cards-msg {
+        font-size: 1.5rem;
+        text-align:left;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content-flex {
+        overflow: hidden;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .home-content {
+        width: 98%;
+        height: auto;
+        padding: 0 10px;
+        gap: 20px;
+    }
+
+    .home-content-welcome,
+    .home-content-welcome-small,
+    .home-content-welcome2 {
+        width: 100%;
+        height: 450px;
+    }
+
+    .home-content-colaborador,
+    .home-content-colaborador1 {
+        margin-top: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content-colaborador1-text2 {
+        overflow-wrap: break-word
+    }
+
+    .home-content-cards-container,
+    .home-content-cards {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .home-content-cards-msg {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+}

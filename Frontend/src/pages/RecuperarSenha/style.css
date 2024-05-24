@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.container-change-password{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.541);
+}
+
+.container-change-password-form {
+    width: 100%;
+    max-width: 400px; 
+    padding: 30px 20px; 
+    background-color: rgb(18, 18, 54);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.container-title-form-change-password{
+    color: white;
+    margin-bottom: 20px; 
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.container-inputs-form-change-password {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px; 
+}
+
+.container-inputs-form-change-password > input {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 17px;
+    background-color: white;
+    font-size: 11pt;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.container-inputs-form-change-password{
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-inputs-form-change-password > label{
+    margin-bottom: 10px;
+}
+
+.container-button-form-change-password{
+    width: 50%; 
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: rgb(18, 18, 54);
+    background-color: white;
+    cursor: pointer;
+    text-align: center; 
+}
+.container-back-to-login {
+    text-transform: uppercase;
+    margin: 10px 0px;
+    text-decoration: none;
+    color: rgb(255, 238, 1); 
+    text-align: center;
+}

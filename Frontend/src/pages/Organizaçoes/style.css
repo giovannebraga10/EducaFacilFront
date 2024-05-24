@@ -1,0 +1,16 @@
+.section-cards-orgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .section-cards-orgs{
+        height: auto;
+        flex-direction: column;
+    }
+}   

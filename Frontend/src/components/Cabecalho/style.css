@@ -1,0 +1,176 @@
+/* Estilos principais do cabeçalho */
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(255, 239, 19);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    border-bottom: 0.1px solid rgb(120, 118, 118);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.texto {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+nav div a {
+    text-decoration: none;
+    display: block;
+}
+
+nav div a:hover {
+    background-color: none;
+}
+
+.drop {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    background-color: rgba(18, 18, 54);
+    white-space: nowrap;
+    display: block;
+    margin-right: 200px;
+    height: 0;
+    overflow: hidden;
+    z-index: 999;
+    position: fixed;
+}
+
+.drop a {
+    color: white;
+    padding: 15px 10px;
+}
+
+.drop a:hover {
+    background-color: rgb(255, 239, 19);
+}
+
+.drop-hover {
+    position: relative;
+}
+
+.drop-hover .drop {
+    position: absolute;
+    border-right: 3px solid rgb(255, 238, 1);
+    border-top: 0;
+}
+
+.categorias {
+    height: 9.8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.drop-hover:hover .drop {
+    height: 230px;
+    border-bottom: 0px solid rgb(255, 238, 1);
+    border-right: 3px solid rgb(255, 238, 1);
+    transition: .8s;
+}
+
+.drop-hover:hover .drop a:hover {
+    color: black;
+}
+
+.texto:hover {
+    background-color: none;
+}
+
+.texto svg {
+    font-size: 12px;
+}
+
+input {
+    height: 1vh;
+    width: 25%;
+    padding: 22px;
+    outline: none;
+    border-radius: 20px;
+}
+
+.botoes-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    gap: 3px;
+    margin-right: 2%;
+}
+
+.btn {
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    border: solid 1px black;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.linksemsublinhado {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(216, 214, 214);
+}
+
+figure {
+    margin-left: 15px;
+}
+
+/* Estilos responsivos para telas de 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    figure{
+        width: 10%;
+    }
+    
+    .categorias {
+        padding-left: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+    }
+
+    .drop-hover .drop {
+        position: absolute;
+        left: 120px;
+    }
+    
+    .botoes-login {
+        width: 100%;
+        margin-right: 0;
+        justify-content: flex-end;
+    }
+    
+    .btn {
+        width: auto;
+        margin: 5px;
+    }
+}
+
+.botao-sair{
+    font-size: 2rem;
+    background: none;
+    margin-left: 3px;
+    cursor: pointer;
+
+}

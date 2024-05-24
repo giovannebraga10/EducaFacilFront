@@ -1,0 +1,26 @@
+footer{
+  background-color: rgb(18, 18, 54);
+  color: #fff;
+  padding: 35px;
+  text-align: center;
+  margin:0;
+  bottom: 0;
+  width: 100%;
+}
+.container-links-footer{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+.links-footer{
+    margin: 0 40px;
+    
+}
+.link-footer{
+    color: rgb(255, 238, 1);
+    text-decoration: none;
+}
+.link-footer a:hover{
+    text-decoration: underline;
+}

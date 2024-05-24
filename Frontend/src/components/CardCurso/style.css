@@ -1,0 +1,79 @@
+.curso-pub{
+    display: flex;
+    height: 90px;
+    border: 3px solid rgb(241, 239, 239);
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(157, 159, 161);
+}
+.curso-content-card{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info-curso{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+ 
+}
+
+.sub-info-curso{
+    display: flex;
+    background-color: #b6b4b7;
+    border: 1px solid rgb(241, 239, 239);
+    color: #313132ef;
+    font-size: 10pt;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+}
+
+.titulo-card{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.professor-curso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carga-curso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-excluir{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 1.1rem;
+    color: rgb(228, 46, 46);
+    border: 2px solid rgb(241, 239, 239) ;
+    border-radius: 5px;
+    
+}
+
+
+.botao-entrar{
+    color: black;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 1.1rem;
+    border: 2px solid rgb(241, 239, 239) ;
+    border-radius: 5px;
+}
