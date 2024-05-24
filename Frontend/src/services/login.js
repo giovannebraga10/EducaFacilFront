@@ -1,5 +1,7 @@
+const baseURL = 'https://educafacilapi.azurewebsites.net'
+
 export async function login(email, senha) {
-    return fetch('/api/Auth/login', {
+    return fetch(`${baseURL}/api/Auth/login`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

@@ -1,14 +1,15 @@
+const baseURL = 'https://educafacilapi.azurewebsites.net'
 
 export async function obterOrganizacoes() {
-    return fetch('/api/Organizacoes').then(r => r.json())
+    return fetch(`${baseURL}/api/Organizacoes`).then(r => r.json())
 }
 
 export async function obterOrganizacao(id) {
-    return fetch(`/api/Organizacoes/${id}`).then(r => r.json())
+    return fetch(`${baseURL}/api/Organizacoes/${id}`).then(r => r.json())
 }
 
 export async function cadastrarOrganizacao(org) {
-    return fetch('/api/Organizacoes', {
+    return fetch(`${baseURL}/api/Organizacoes`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

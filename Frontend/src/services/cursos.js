@@ -1,5 +1,7 @@
+const baseURL = 'https://educafacilapi.azurewebsites.net'
+
 export async function obterCurso(id) {
-    return fetch(`/api/Cursos/${id}`, {
+    return fetch(`${baseURL}/api/Cursos/${id}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -9,7 +11,7 @@ export async function obterCurso(id) {
 }
 
 export async function obterCursos() {
-    return fetch(`/api/Cursos`, {
+    return fetch(`${baseURL}/api/Cursos`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -19,7 +21,7 @@ export async function obterCursos() {
 } 
 
 export async function cadastrarCurso(curso, token) {
-    return fetch('/api/Cursos', {
+    return fetch(`${baseURL}/api/Cursos`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -31,7 +33,7 @@ export async function cadastrarCurso(curso, token) {
 }
 
 export async function editarCurso(id, curso, token) {
-    return fetch(`/api/Cursos/${id}`, {
+    return fetch(`${baseURL}/api/Cursos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
@@ -43,7 +45,7 @@ export async function editarCurso(id, curso, token) {
 }
 
 export async function deletarCurso(id, token) {
-    return fetch(`/api/Cursos/${id}`, {
+    return fetch(`${baseURL}/api/Cursos/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',
