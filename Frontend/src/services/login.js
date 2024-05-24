@@ -7,6 +7,7 @@ export async function login(email, senha) {
             'Content-Type': 'application/json',
             accept: 'plain/text'
         },
-        body: JSON.stringify({ email, senha })
+        body: JSON.stringify({ email, senha }),
+        mode: "no-cors",
     }).then(r => r.text()).catch(e => console.log(e))
 }

@@ -7,6 +7,7 @@ export async function obterCurso(id) {
             'Content-Type': 'application/json',
             accept: 'plain/text',
         },
+        mode: "no-cors",
     }).then(r => r.json()).catch(e => console.log(e))
 }
 
@@ -17,6 +18,7 @@ export async function obterCursos() {
             'Content-Type': 'application/json',
             accept: 'plain/text',
         },
+        mode: "no-cors",
     }).then(r => r.json()).catch(e => console.log(e))
 } 
 
@@ -28,7 +30,8 @@ export async function cadastrarCurso(curso, token) {
             accept: 'plain/text',
             Authorization: `Bearer ${token}`
         },
-        body: JSON.stringify(curso)
+        body: JSON.stringify(curso),
+        mode: "no-cors",
     }).then(r => r.status === 201).catch(e => console.log(e))
 }
 
@@ -40,7 +43,8 @@ export async function editarCurso(id, curso, token) {
             accept: 'plain/text',
             Authorization: `Bearer ${token}`
         },
-        body: JSON.stringify(curso)
+        body: JSON.stringify(curso),
+        mode: "no-cors",
     }).then(r => r.status === 204).catch(e => console.log(e))
 }
 
@@ -51,6 +55,7 @@ export async function deletarCurso(id, token) {
             'Content-Type': 'application/json',
             accept: 'plain/text',
             Authorization: `Bearer ${token}`
-        }
+        },
+        mode: "no-cors",
     }).then(r => r.status === 204).catch(e => console.log(e))
 }
