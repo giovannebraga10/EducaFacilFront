@@ -18,6 +18,7 @@ export default function CursoPage() {
     const [curso, setCurso] = useState()
     const navigate = useNavigate()
     const [token] = useSessionStorage("JwtToken")
+    const [userInfo] = useSessionStorage("UserInfo")
 
     const [openModal, setOpenModal] = useState(false)
 
@@ -65,7 +66,7 @@ export default function CursoPage() {
                 <Menu />
                 <Conteudo>
                     <div className="add-aula">
-                        <button onClick={() => setOpenModal(true)} className="button-add-curso">Adicionar Aula</button>
+                        {userInfo?.sub == curso?.organizacaoId && (<button onClick={() => setOpenModal(true)} className="button-add-curso">Adicionar Aula</button>)}
                     </div>
                     <section className="videos">
                         {curso?.videos.map((video) => {

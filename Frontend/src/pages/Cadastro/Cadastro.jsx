@@ -127,7 +127,7 @@ const Cadastro = () => {
           <div className={`form-content ${errors.senha ? 'error' : ''}`}>
             <label htmlFor="senha">Senha</label>
             <input
-              type="text"
+              type="password"
               id="senha"
               placeholder="Digite a sua senha"
               value={formData.senha}
@@ -139,7 +139,7 @@ const Cadastro = () => {
           <div className={`form-content ${errors.confirmacaoSenha ? 'error' : ''}`}>
             <label htmlFor="confirmacao-senha">Confirme sua Senha</label>
             <input
-              type="text"
+              type="password"
               id="confirmacaoSenha"
               placeholder="Digite sua senha novamente"
               value={formData.confirmacaoSenha}

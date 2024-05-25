@@ -122,7 +122,7 @@ export default function PerfilOrg() {
                                 <div className="perfil-content">
                                     {org.cursos?.map((curso) => {
                                         return (
-                                            <CardCurso curso={curso} />
+                                            <CardCurso curso={curso} owner={userInfo?.sub == org.id}/>
                                         )
                                     })}
                                 </div>

@@ -9,16 +9,16 @@ import { useSessionStorage } from "@uidotdev/usehooks";
 
 
 
-export default function CardCurso({ curso }) {
+export default function CardCurso({ curso, owner }) {
     const navigate = useNavigate()
     const [token] = useSessionStorage("JwtToken")
 
     const handleDelete = () => {
         deletarCurso(curso.id, token).then((success) => {
-            if(success)
+            if (success)
                 navigate(0)
         })
-    } 
+    }
 
     return (
         <div className="curso-pub">
@@ -30,9 +30,8 @@ export default function CardCurso({ curso }) {
                     <div className="titulo-card">
                         {curso.titulo}
                     </div>
-
                     <div>
-                        <button className="botao-excluir" onClick={handleDelete}><BsTrash /></button>
+                        {owner && (<button className="botao-excluir" onClick={handleDelete}><BsTrash /></button>)}
                     </div>
                 </div>
                 <div className="sub-info-curso">

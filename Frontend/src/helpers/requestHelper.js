@@ -1,3 +1,7 @@
 export function getBaseUrl() {
-    return 'https://educafacilapi.azurewebsites.net'
+    if(process.env.NODE_ENV === 'production'){
+        return 'https://educafacilapi.azurewebsites.net'
+    }
+    
+    return ''
 }
