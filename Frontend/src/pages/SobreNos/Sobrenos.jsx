@@ -63,9 +63,14 @@ export default function Sobrenos() {
                                             19 anos | Analise e desenvolvimento de Sistemas | FECAP
                                         </div>
                                         <div className='container-dados-desc-icons'>
-                                            <button> <BsGithub /> </button>
-                                            <button> <BsLinkedin /> </button>
+                                            <a href="https://github.com/clicaro">
+                                                <button> <BsGithub /> </button>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/icaro-luis-dellalo-silva-b8ab60304/">
+                                                <button> <BsLinkedin /> </button>
+                                            </a>
                                             <button> <BsEnvelopeFill /> </button>
+
 
                                         </div>
                                     </div>
@@ -88,8 +93,12 @@ export default function Sobrenos() {
                                             27 anos | Analise e desenvolvimento de Sistemas | FECAP
                                         </div>
                                         <div className='container-dados-desc-icons'>
-                                            <button> <BsGithub /> </button>
-                                            <button> <BsLinkedin /> </button>
+                                            <a href="http://github.com/Estevan96">
+                                                <button> <BsGithub /> </button>
+                                            </a>
+                                            <a href="http://linkedin.com/in/giovane-estevan-santos-ramos/">
+                                                <button> <BsLinkedin /> </button>
+                                            </a>
                                             <button> <BsEnvelopeFill /> </button>
 
                                         </div>

@@ -24,3 +24,10 @@ footer{
 .link-footer a:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .container-links-footer{
+        display: flex;
+        margin-left: 50px;
+    }
+}

@@ -1,4 +1,6 @@
-const baseURL = 'https://educafacilapi.azurewebsites.net'
+import { getBaseUrl } from "../helpers/requestHelper"
+
+const baseURL = getBaseUrl()
 
 export async function login(email, senha) {
     return fetch(`${baseURL}/api/Auth/login`, {

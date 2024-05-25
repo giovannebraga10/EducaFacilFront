@@ -7,6 +7,7 @@ import Organizações from "./pages/Organizaçoes/Organizações";
 import Recuperarsenha from "./pages/RecuperarSenha/Recuperarsenha";
 import PerfilOrg from "./pages/PerfilOrg/PerfilOrg";
 import CursoPage from "./pages/CursoPage/CursoPage";
+import VideoPage from "./pages/VideoPage/VideoPage";
 function AppRoutes(){
     return(
         <BrowserRouter>
@@ -19,6 +20,7 @@ function AppRoutes(){
                 <Route path="/cadastro" element={<Cadastro/>}></Route>
                 <Route path="/recuperarsenha" element={<Recuperarsenha />}></Route>
                 <Route path="/curso/:id" element={<CursoPage />}></Route>
+                <Route path="/videopage/:id" element={<VideoPage />}></Route>
             </Routes>
         </BrowserRouter>
    )

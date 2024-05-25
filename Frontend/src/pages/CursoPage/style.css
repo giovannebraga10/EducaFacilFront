@@ -1,5 +1,5 @@
 .videos{
-    width: 80%;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -9,10 +9,18 @@
 }
 
 .card-aula{
+    width: 80%;
     display: flex;
     gap: 5%;
     background-color: rgb(157, 159, 161);
     border: 3px solid rgb(241, 239, 239);
     border-radius: 10px;
     padding: 10px;
+}
+
+.add-aula{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

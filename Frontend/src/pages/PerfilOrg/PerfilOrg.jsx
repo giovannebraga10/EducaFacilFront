@@ -50,27 +50,26 @@ export default function PerfilOrg() {
     }
 
     useEffect(() => {
-        console.log({ id })
         obterOrganizacao(id).then(setOrg);
     }, [])
 
     return (
         <>
             <Cabecalho />
-            <div className='home.content-flex'>
+            <div>
                 <div className='content-flex'>
                     <Menu />
                     <Conteudo>
                         <div className="all-page-perfil">
                             <section className="perfil-organizacoes">
-                                {userInfo?.sub == org.id && (
+                                {/* {userInfo?.sub == org.id && (
                                     <div className="button-edit">
                                         <button className="pencil-edit">Editar<MdOutlineModeEdit /></button>
                                     </div>
-                                )}
+                                )} */}
                                 <div className="perfil-head">
                                     <div className="logo-perfil-org">
-                                        <img src="https://storage.googleapis.com/atados-v3/user-uploaded/images/6992f0b3-fd06-490c-b332-37951e36ab54.png" alt="logo Ebenezer" />
+                                        <img src={org.logo || "https://bizdiscoverer.com/wp-content/uploads/2020/04/placeholder_building.png"} alt="logo Ebenezer" />
                                     </div>
                                     <div className="info-perfil-org">
                                         <div className="perfil-dados">
@@ -100,11 +99,11 @@ export default function PerfilOrg() {
                                             </div>
                                             <div className="inputs-info">
                                                 <label htmlFor="Descrição">Descrição:</label>
-                                                <input type="text" placeholder="Digite aqui a Descrição do Curso" id="professor" value={formData.professor} onChange={handleCursoChange} />
+                                                <input type="text" placeholder="Digite aqui a Descrição do Curso" id="descricao" value={formData.descricao} onChange={handleCursoChange} />
                                             </div>
                                             <div className="inputs-info">
                                                 <label htmlFor="Professor">Professor:</label>
-                                                <input type="text" placeholder="Digite aqui o o nome do Professor" id="descricao" value={formData.descricao} onChange={handleCursoChange} />
+                                                <input type="text" placeholder="Digite aqui o o nome do Professor" id="professor" value={formData.professor} onChange={handleCursoChange} />
                                             </div>
                                             <div className="inputs-info">
                                                 <label htmlFor="Carga-Horaria">Carga Horaria:</label>

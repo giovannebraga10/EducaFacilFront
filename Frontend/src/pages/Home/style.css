@@ -297,7 +297,7 @@
     }
 
     .home-content {
-        width: 98%;
+        width: 80%;
         height: auto;
         padding: 0 10px;
         gap: 20px;
@@ -312,23 +312,21 @@
 
     .home-content-colaborador,
     .home-content-colaborador1 {
+        width: 100%;
         margin-top: 30px;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
     }
-
-    .home-content-colaborador1-text2 {
-        overflow-wrap: break-word
-    }
+    
 
     .home-content-cards-container,
     .home-content-cards {
-        height: auto;
         flex-direction: column;
+        display: flex;
     }
 
     .home-content-cards-msg {
         font-size: 1.5rem;
-        text-align: left;
+        text-align: start;
     }
 }

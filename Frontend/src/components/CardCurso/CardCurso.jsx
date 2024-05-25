@@ -3,12 +3,23 @@ import style from '../CardCurso/style.css'
 import { BsTrash } from "react-icons/bs";
 import { BsArrow90DegLeft } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import { deletarCurso } from "../../services/cursos";
+import { useSessionStorage } from "@uidotdev/usehooks";
 
 
 
 
 export default function CardCurso({ curso }) {
     const navigate = useNavigate()
+    const [token] = useSessionStorage("JwtToken")
+
+    const handleDelete = () => {
+        deletarCurso(curso.id, token).then((success) => {
+            if(success)
+                navigate(0)
+        })
+    } 
+
     return (
         <div className="curso-pub">
             <div className="curso-content-card">
@@ -21,16 +32,15 @@ export default function CardCurso({ curso }) {
                     </div>
 
                     <div>
-                        <button className="botao-excluir"><BsTrash /></button>
+                        <button className="botao-excluir" onClick={handleDelete}><BsTrash /></button>
                     </div>
                 </div>
                 <div className="sub-info-curso">
-                    <div className="descricao-curso">
-                        {curso.descricao}
-
-                    </div>
                     <div className="professor-curso">
                         {curso.professor}
+                    </div>
+                    <div className="descricao-curso">
+                        {curso.descricao}
                     </div>
                     <div className="carga-curso">
                         {curso.cargahoraria}

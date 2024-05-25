@@ -8,7 +8,7 @@ export default function CardOrg({org}) {
     return (
         <div className='card-organizacoes'>
             <div className="card-org-info">
-                <img className="card-org-logo" src={org.logo} alt="logo-org" />
+                <img className="card-org-logo" src={org.logo || 'https://bizdiscoverer.com/wp-content/uploads/2020/04/placeholder_building.png'} alt="logo-org" />
                 { org.nome }
             </div>
             <div className="card-org-acessar-perfil">
